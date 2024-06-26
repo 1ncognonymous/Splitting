@@ -1,0 +1,7 @@
+from moviepy.editor import VideoFileClip
+
+input_video = VideoFileClip("F:\\Ayush\\vids\\balls.mp4")
+clip1 = input_video.subclip(19, 64)
+clip2 = input_video.subclip(73, 95)
+clip1.write_videofile("1.mp4", fps=60)
+clip2.write_videofile("2.mp4", fps=60)
